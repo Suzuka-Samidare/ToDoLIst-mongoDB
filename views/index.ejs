@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ToDoList</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+
+    <div id="main">
+      <p>何する?</p>
+      <input id="input-content" type="text" name="content"><br>
+      予定<input id="input-limit" type="radio" name="limit" value="予定">
+      期限<input id="input-limit" type="radio" name="limit" value="期限"><br>
+      <input id="input-date" type="date" name="date">
+      <input id="input-time" type="time" name="time">
+      <input id="add-btn" type="submit" value="add">
+    </div>
+
+    <div id="todo-list"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/javascripts/main.js"></script>
+  </body>
+</html>
